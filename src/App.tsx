@@ -1,3 +1,6 @@
+//Bune
+
+
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import Oto1 from './screens/Oto1';
 import Downsell1 from './screens/Downsell1';
