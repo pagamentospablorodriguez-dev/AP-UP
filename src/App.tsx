@@ -15,7 +15,7 @@ import { useReveal } from './useReveal';
  * redireciona para a URL do próximo passo do funil.
  */
 export const CHECKOUT_URLS: Record<string, string> = {
-  oto1: 'https://checkout.seudominio.com/oto1',
+  oto1: 'https://pay.cakto.com.br/37siaqe_990735',
   downsell1: 'https://checkout.seudominio.com/downsell1',
   oto2: 'https://checkout.seudominio.com/oto2',
   downsell2: 'https://checkout.seudominio.com/downsell2',
