@@ -1,0 +1,39 @@
+[[redirects]]
+  from = "/oto1"
+  to = "/index.html"
+  status = 200
+
+  [[redirects]]
+  from = "/downsell1"
+  to = "/index.html"
+  status = 200
+
+   [[redirects]]
+  from = "/oto2"
+  to = "/index.html"
+  status = 200
+
+  
+   [[redirects]]
+  from = "/downsell2"
+  to = "/index.html"
+  status = 200
+
+
+   [[redirects]]
+  from = "/oto3"
+  to = "/index.html"
+  status = 200
+
+
+   [[redirects]]
+  from = "/downsell3"
+  to = "/index.html"
+  status = 200
+
+
+  
+   [[redirects]]
+  from = "/obrigado"
+  to = "/index.html"
+  status = 200
