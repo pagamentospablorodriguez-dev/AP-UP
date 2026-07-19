@@ -123,7 +123,7 @@ export default function Oto3({ checkoutUrl, onNo }: Oto3Props) {
 
       <section className="mx-auto max-w-5xl px-4">
         <HeroImage
-          src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg"
+          src="https://images.pexels.com/photos/12306262/pexels-photo-12306262.jpeg"
           alt="Homem de terno escuro em ambiente urbano noturno"
           caption="O homem que tem o arsenal não precisa escolher. Ele carrega tudo."
           className="min-h-[440px] sm:min-h-[540px]"
