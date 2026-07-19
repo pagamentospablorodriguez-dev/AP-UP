@@ -66,7 +66,7 @@ export default function Obrigado({ purchased = [] }: ObrigadoProps) {
 
         <div className="reveal mt-12">
           <a
-            href="#"
+            href="https://aurapredadora-acesso.alaobra.co"
             className="group inline-flex items-center justify-center gap-3 rounded-xl bg-gradient-to-b from-[#e6c178] to-[#c8a35c] px-10 py-5 font-sans text-base font-extrabold uppercase tracking-wide text-ink-900 shadow-[0_18px_40px_-12px_rgba(200,163,92,0.55)] transition-all duration-300 hover:-translate-y-0.5"
           >
             Acessar Meu Produto
