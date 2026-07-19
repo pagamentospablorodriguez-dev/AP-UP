@@ -17,7 +17,7 @@ import { useReveal } from './useReveal';
 export const CHECKOUT_URLS: Record<string, string> = {
   oto1: 'https://pay.cakto.com.br/37siaqe_990735',
   downsell1: 'https://pay.cakto.com.br/ifchiiy_990744',
-  oto2: 'https://checkout.seudominio.com/oto2',
+  oto2: 'https://pay.cakto.com.br/jfzddfv_990802',
   downsell2: 'https://checkout.seudominio.com/downsell2',
   oto3: 'https://checkout.seudominio.com/oto3',
   downsell3: 'https://checkout.seudominio.com/downsell3',
