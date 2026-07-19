@@ -115,7 +115,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
 
       <section className="mx-auto max-w-5xl px-4">
         <HeroImage
-          src="https://images.pexels.com/photos/1755385/pexels-photo-1755385.jpeg"
+          src="https://images.pexels.com/photos/14829690/pexels-photo-14829690.jpeg"
           alt="Mulher elegante de vestido preto olhando à noite"
           caption="Ela não decide te olhar. Ela só te olha. E não sabe explicar por quê."
           className="min-h-[440px] sm:min-h-[540px]"
