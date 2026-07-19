@@ -114,7 +114,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
 
       <section className="mx-auto max-w-5xl px-4">
         <HeroImage
-          src="https://images.pexels.com/photos/1346187/pexels-photo-1346187.jpeg"
+          src="https://images.pexels.com/photos/16122118/pexels-photo-16122118.jpeg"
           alt="Homem confiante caminhando na cidade à noite"
           caption="O pescoço vira antes dela perceber que virou."
           className="min-h-[440px] sm:min-h-[540px]"
