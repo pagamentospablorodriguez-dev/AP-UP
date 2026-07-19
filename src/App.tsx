@@ -19,8 +19,8 @@ export const CHECKOUT_URLS: Record<string, string> = {
   downsell1: 'https://pay.cakto.com.br/ifchiiy_990744',
   oto2: 'https://pay.cakto.com.br/jfzddfv_990802',
   downsell2: 'https://pay.cakto.com.br/3bvh7xe_990984',
-  oto3: 'https://checkout.seudominio.com/oto3',
-  downsell3: 'https://checkout.seudominio.com/downsell3',
+  oto3: 'https://pay.cakto.com.br/5hkuuue_991210',
+  downsell3: 'https://pay.cakto.com.br/343v2he_991220',
 };
 
 function RoutedScreen({
