@@ -108,7 +108,7 @@ export default function Oto3({ checkoutUrl, onNo }: Oto3Props) {
           Você Está A 1 Decisão De Ter O{' '}
           <span className="gold-text">Arsenal Predador Completo</span>
           <br />
-          Por Menos Da Terça Parte Do Preço
+          Por Menos De Um Terço Do Preço
         </h1>
 
         <p className="reveal mx-auto mt-6 max-w-2xl font-serif text-xl italic text-gold/90">
