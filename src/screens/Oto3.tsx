@@ -52,13 +52,13 @@ const deliverables: Deliverable[] = [
   {
     title: 'Áudio OM KROOM LINGAYA OM (sacral) + seus 2 bônus',
     description:
-      'O áudio principal de 9 minutos + a versão noturna de 11 minutos + o Campo Energético de 5 minutos. Tudo do OTO 1, completo.',
+      'O áudio principal de 9 minutos + a versão noturna de 11 minutos + o Campo Energético de 5 minutos. Tudo da oferta 1, completo.',
     value: 'R$ 197',
   },
   {
     title: 'Áudio O Chamado de Asmodeus + seus 2 bônus',
     description:
-      'O áudio principal de 7 minutos + o Selo de Asmodeus de 21 minutos + o Livro de Asmodeus (PDF com o ritual de 3 dias). Tudo do OTO 2, completo.',
+      'O áudio principal de 7 minutos + o Selo de Asmodeus de 21 minutos + o Livro de Asmodeus (PDF com o ritual de 3 dias). Tudo da oferta 2, completo.',
     value: 'R$ 397',
   },
   {
