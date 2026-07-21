@@ -160,7 +160,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
         <div className="reveal flex items-start gap-4 rounded-2xl border border-gold/30 bg-gold/5 p-6">
           <AlertTriangle className="mt-1 h-6 w-6 shrink-0 text-gold" />
           <p className="prose-sales !text-[1.05rem] !leading-relaxed">
-            <strong>Conteúdo avançado.</strong> Use com responsável — a energia é
+            <strong>Conteúdo avançado.</strong> Use com responsabilidade — a energia é
             forte demais para uso indiscriminado. Por isso o{' '}
             <em>Manual de Uso Responsável</em> vem incluso. Sem ele, o áudio é
             como um motor potente sem volante.
