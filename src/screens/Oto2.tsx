@@ -101,7 +101,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
         <h1 className="reveal mt-8 font-serif text-4xl font-extrabold leading-[1.1] text-cream sm:text-5xl md:text-6xl">
           O Protocolo Que Você Comprou Acende A Aura.
           <br />
-          <span className="gold-text">Isto Aqui É O Combustível Que Faz Ela Explodir.</span>
+          <span className="gold-text">Isso Aqui É O Combustível Que Faz Ela Explodir.</span>
         </h1>
 
         <p className="reveal mx-auto mt-6 max-w-2xl font-serif text-xl italic text-gold/90">
