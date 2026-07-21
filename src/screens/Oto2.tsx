@@ -1,4 +1,4 @@
-import { Flame, Skull, Volume2, AlertTriangle, Zap, ArrowDown } from 'lucide-react';
+import { Flame, Skull, Volume2, AlertTriangle, Zap, ArrowUp } from 'lucide-react';
 import TransitionBar from '../components/TransitionBar';
 import OtoBadge from '../components/OtoBadge';
 import HeroImage from '../components/HeroImage';
@@ -305,7 +305,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
             sempre.
           </p>
           <div className="mt-4 flex items-center gap-2 text-cream/50">
-            <ArrowDown className="h-4 w-4 animate-bounce" />
+            <ArrowUp className="h-4 w-4 animate-bounce" />
             <span className="font-sans text-xs uppercase tracking-widest">
               Role para cima e decida
             </span>
