@@ -1,7 +1,7 @@
 //Bune
 
-
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Oto1 from './screens/Oto1';
 import Downsell1 from './screens/Downsell1';
 import Oto2 from './screens/Oto2';
@@ -11,12 +11,6 @@ import Downsell3 from './screens/Downsell3';
 import Obrigado from './screens/Obrigado';
 import { useReveal } from './useReveal';
 
-/**
- * URLs de checkout de cada upsell. Substitua pelos links reais da sua plataforma
- * (Kiwify, Hotmart, Braip, Cakto, etc.). O cliente já comprou o front-end; cada
- * SIM leva ao checkout deste upsell específico, e após o pagamento a plataforma
- * redireciona para a URL do próximo passo do funil.
- */
 export const CHECKOUT_URLS: Record<string, string> = {
   oto1: 'https://pay.cakto.com.br/37siaqe_990735',
   downsell1: 'https://pay.cakto.com.br/ifchiiy_990744',
@@ -25,6 +19,14 @@ export const CHECKOUT_URLS: Record<string, string> = {
   oto3: 'https://pay.cakto.com.br/5hkuuue_991210',
   downsell3: 'https://pay.cakto.com.br/343v2he_991220',
 };
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 function RoutedScreen({
   step,
@@ -120,6 +122,7 @@ function ObrigadoRoute() {
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Oto1Route />} />
         <Route path="/oto1" element={<Oto1Route />} />
