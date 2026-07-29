@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Clock } from 'lucide-react';
 
 interface CountdownProps {
-  /** Total seconds to count down from. */
   from?: number;
   className?: string;
 }
