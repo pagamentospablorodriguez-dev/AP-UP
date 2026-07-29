@@ -32,7 +32,7 @@ export default function Obrigado({ purchased = [] }: ObrigadoProps) {
               <Check className="mt-1 h-5 w-5 shrink-0 text-gold" />
               <span className="prose-sales !text-[1.05rem] !leading-relaxed">
                 <strong>Código da Aura Predadora</strong> — protocolo digital
-                completo (PDF + áudios bônus)
+                completo
               </span>
             </li>
             {purchased.map((item, i) => (
@@ -57,8 +57,7 @@ export default function Obrigado({ purchased = [] }: ObrigadoProps) {
                 Enviamos todos os links de acesso para o seu{' '}
                 <strong>e-mail de compra</strong>. Verifique a caixa de entrada
                 (e a pasta de spam, caso não encontre em 5 minutos). O acesso é{' '}
-                <em>imediato</em> e <em>vitalício</em> — você baixa, escuta e usa
-                quantas vezes quiser.
+                <em>imediato</em> e <em>vitalício</em>.
               </p>
             </div>
           </div>
@@ -88,7 +87,7 @@ export default function Obrigado({ purchased = [] }: ObrigadoProps) {
 
         <p className="reveal mx-auto mt-16 max-w-2xl font-serif text-lg italic text-cream/60">
           Bem-vindo ao outro lado. Você não comprou um produto — você ativou uma
-          versão de si mesmo que estava dormindo. Agora é escutar, sentir, e deixar
+          versão de si mesmo que estava dormindo. Agora é aplicar, sentir, e deixar
           a aura fazer o resto.
         </p>
       </section>
