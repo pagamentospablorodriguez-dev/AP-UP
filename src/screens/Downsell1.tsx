@@ -171,12 +171,7 @@ export default function Downsell1({ checkoutUrl, onNo }: Downsell1Props) {
         </div>
       </section>
 
-      <div className="mx-auto max-w-3xl px-4 pb-10 text-center">
-        <p className="reveal flex items-center justify-center gap-2 font-sans text-xs uppercase tracking-widest text-cream/40">
-          <AlertTriangle className="h-3.5 w-3.5 text-gold/60" />
-          Material educacional · Não substitui acompanhamento profissional
-        </p>
-      </div>
+    
 
       <StickyCTA checkoutUrl={checkoutUrl} label="Adicionar Por R$ 47" />
     </div>
