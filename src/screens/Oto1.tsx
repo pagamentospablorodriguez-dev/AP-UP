@@ -118,7 +118,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
 
       <section className="mx-auto max-w-5xl px-4">
         <HeroImage
-          src="https://images.pexels.com/photos/31021644/pexels-photo-31021644.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+          src="https://images.pexels.com/photos/18812274/pexels-photo-18812274.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
           alt="Casal em momento íntimo sob luz vermelha à noite"
           caption="O olhar dela é só a primeira porta. O Mapa Da Caçada te dá a chave — e o mapa — de todas as outras."
           className="min-h-[440px] sm:min-h-[540px]"
