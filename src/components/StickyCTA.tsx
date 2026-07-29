@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, createElement } from 'react';
 import { createPortal } from 'react-dom';
 import { ArrowRight, Lock } from 'lucide-react';
 
@@ -19,6 +19,19 @@ export default function StickyCTA({ checkoutUrl, label }: StickyCTAProps) {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const ctaLink = createElement(
+    'a',
+    {
+      href: checkoutUrl,
+      className:
+        'group flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-[#e6c178] to-[#c8a35c] px-6 py-3.5 font-sans text-sm font-extrabold uppercase tracking-wide text-ink-900 shadow-[0_12px_30px_-8px_rgba(200,163,92,0.55)] transition-all hover:-translate-y-0.5 sm:flex-none sm:px-10',
+    },
+    label,
+    createElement(ArrowRight, {
+      className: 'h-4 w-4 transition-transform group-hover:translate-x-1',
+    })
+  );
+
   return createPortal(
     <div
       className={`fixed inset-x-0 bottom-0 z-50 border-t border-gold/30 bg-ink-900/95 backdrop-blur transition-transform duration-300 ${
@@ -32,13 +45,7 @@ export default function StickyCTA({ checkoutUrl, label }: StickyCTAProps) {
             Garantia de 30 dias · Acesso imediato
           </p>
         </div>
-        
-          href={checkoutUrl}
-          className="group flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-[#e6c178] to-[#c8a35c] px-6 py-3.5 font-sans text-sm font-extrabold uppercase tracking-wide text-ink-900 shadow-[0_12px_30px_-8px_rgba(200,163,92,0.55)] transition-all hover:-translate-y-0.5 sm:flex-none sm:px-10"
-        >
-          {label}
-          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-        </a>
+        {ctaLink}
       </div>
     </div>,
     document.body
