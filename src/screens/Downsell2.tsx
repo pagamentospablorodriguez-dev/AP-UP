@@ -106,7 +106,7 @@ export default function Downsell2({ checkoutUrl, onNo }: Downsell2Props) {
         <OfferCard>
           <div className="text-center">
             <p className="font-serif text-lg italic text-cream/70">
-              O Predador Domina — versão essencial (manual da Hora H, sem bônus)
+              O Protocolo Da Dominação — versão essencial (manual da Hora H, sem bônus)
             </p>
             <p className="mt-3 font-serif text-sm text-cream/50">
               De <span className="line-through">R$ 297</span> por apenas
