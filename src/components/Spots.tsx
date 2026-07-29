@@ -2,11 +2,8 @@ import { useEffect, useState } from 'react';
 import { Flame } from 'lucide-react';
 
 interface SpotsProps {
-  /** Initial spots count. */
   from?: number;
-  /** Minimum floor it never goes below. */
   floor?: number;
-  /** Interval in ms between decrements. */
   intervalMs?: number;
 }
 
