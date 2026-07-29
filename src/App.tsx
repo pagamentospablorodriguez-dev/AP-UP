@@ -1,13 +1,13 @@
 //Bune
 
+
+
 import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Oto1 from './screens/Oto1';
 import Downsell1 from './screens/Downsell1';
 import Oto2 from './screens/Oto2';
 import Downsell2 from './screens/Downsell2';
-import Oto3 from './screens/Oto3';
-import Downsell3 from './screens/Downsell3';
 import Obrigado from './screens/Obrigado';
 import { useReveal } from './useReveal';
 
@@ -16,8 +16,6 @@ export const CHECKOUT_URLS: Record<string, string> = {
   downsell1: 'https://pay.cakto.com.br/ifchiiy_990744',
   oto2: 'https://pay.cakto.com.br/jfzddfv_990802',
   downsell2: 'https://pay.cakto.com.br/3bvh7xe_990984',
-  oto3: 'https://pay.cakto.com.br/5hkuuue_991210',
-  downsell3: 'https://pay.cakto.com.br/343v2he_991220',
 };
 
 function ScrollToTop() {
@@ -81,30 +79,6 @@ function Downsell2Route() {
     <RoutedScreen step="downsell2">
       <Downsell2
         checkoutUrl={CHECKOUT_URLS.downsell2}
-        onNo={() => navigate('/oto3')}
-      />
-    </RoutedScreen>
-  );
-}
-
-function Oto3Route() {
-  const navigate = useNavigate();
-  return (
-    <RoutedScreen step="oto3">
-      <Oto3
-        checkoutUrl={CHECKOUT_URLS.oto3}
-        onNo={() => navigate('/downsell3')}
-      />
-    </RoutedScreen>
-  );
-}
-
-function Downsell3Route() {
-  const navigate = useNavigate();
-  return (
-    <RoutedScreen step="downsell3">
-      <Downsell3
-        checkoutUrl={CHECKOUT_URLS.downsell3}
         onNo={() => navigate('/obrigado')}
       />
     </RoutedScreen>
@@ -129,8 +103,6 @@ export default function App() {
         <Route path="/downsell1" element={<Downsell1Route />} />
         <Route path="/oto2" element={<Oto2Route />} />
         <Route path="/downsell2" element={<Downsell2Route />} />
-        <Route path="/oto3" element={<Oto3Route />} />
-        <Route path="/downsell3" element={<Downsell3Route />} />
         <Route path="/obrigado" element={<ObrigadoRoute />} />
         <Route path="*" element={<Oto1Route />} />
       </Routes>
