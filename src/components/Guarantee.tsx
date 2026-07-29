@@ -10,9 +10,9 @@ export default function Guarantee() {
         Garantia Incondicional de 30 Dias
       </h3>
       <p className="prose-sales mt-3 !text-center !text-[1.05rem]">
-        Use, escute, sinta. Se em <strong>30 dias</strong> você não perceber a
-        diferença na forma como as mulheres te olham, escreva um e-mail e devolvemos
-        <em> cada centavo</em>. Sem perguntas, sem burocracia. Todo o risco é nosso.
+        Use, aplique, sinta. Se em <strong>30 dias</strong> você não perceber a
+        diferença, escreva um e-mail e devolvemos <em>cada centavo</em>. Sem
+        perguntas, sem burocracia. Todo o risco é nosso.
       </p>
     </div>
   );
