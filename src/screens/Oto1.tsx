@@ -1,4 +1,4 @@
-import { Flame, Headphones, Volume2, AlertTriangle, ArrowUp } from 'lucide-react';
+import { Flame, Target, Eye, ArrowUp, AlertTriangle, Zap, Bed } from 'lucide-react';
 import TransitionBar from '../components/TransitionBar';
 import OtoBadge from '../components/OtoBadge';
 import HeroImage from '../components/HeroImage';
@@ -11,6 +11,7 @@ import OfferCard from '../components/OfferCard';
 import Guarantee from '../components/Guarantee';
 import FaqAccordion, { type FaqItem } from '../components/FaqAccordion';
 import YesNoCTAs from '../components/YesNoCTAs';
+import StickyCTA from '../components/StickyCTA';
 
 interface Oto1Props {
   checkoutUrl: string;
@@ -20,91 +21,94 @@ interface Oto1Props {
 const testimonials: Testimonial[] = [
   {
     quote:
-      'No terceiro dia escutando no trânsito, uma mulher parou no meio da calçada e ficou me olhando. Eu não disse nada. Ela só ficou. Eu senti que era o áudio.',
+      'Cara, eu tinha a aura funcionando. Mulher me olhava no bar, na academia, no elevador. Mas eu travava igual um idiota. Aplicando o passo 5, na mesma semana eu fechei com uma mina que me olhava há meses. Eu sentia o olhar dela — só não tinha ideia de como transformar em cama. Agora tenho.',
     name: 'R. M.',
-    age: 34,
+    age: 31,
     city: 'São Paulo, SP',
   },
   {
     quote:
-      'Eu achei que era papo furado. Escutei antes de sair pro trabalho. Na padaria, a atendente veio conversar do nada. Depois no elevador, a mesma coisa. Tem algo nesse som.',
+      'O material da aura mudou meu jogo. Mas o Predador Caça me ensinou o que nenhum cara te ensina: como sair do olhar e ir pra cama. A parte do isolamento é cirúrgica. Eu tirei uma mina de dentro de um grupo de 6 amigas sem ela sequer perceber que eu estava conduzindo. Noite seguinte, na minha casa.',
     name: 'A. C.',
-    age: 29,
+    age: 28,
     city: 'Belo Horizonte, MG',
   },
   {
     quote:
-      'A versão noturna é a que mais me pegou. Durmo com ela. Acordo diferente — mais leve, mais firme. As pessoas reparam. Não é coisa da minha cabeça.',
+      'Eu era o cara que a mulher olhava, sorria, e eu deixava escapar. TODA vez. Apliquei o passo a passo e na terceira semana uma mina me abordou no elevador. Eu só conduzi. Ela foi a primeira de muitas. Eu perdi anos da minha vida sendo olhado e indo dormir sozinho.',
     name: 'J. T.',
-    age: 41,
+    age: 35,
     city: 'Curitiba, PR',
   },
   {
     quote:
-      'O protocolo sozinho já funciona, mas demora. Com o áudio, em 4 dias eu senti a diferença. Sem ele, eu ainda estaria esperando.',
+      'O que mais me quebrou foi a parte de como acelerar sem assustar. Eu sempre perdia — ou por demorar demais e virar amigo, ou por apressar e assustar. Esse método te dá o tempo exato. Hoje eu não fico mais na vontade. Eu fecho. E volto pra casa com ela.',
     name: 'L. F.',
-    age: 37,
+    age: 39,
     city: 'Porto Alegre, RS',
   },
 ];
 
 const deliverables: Deliverable[] = [
   {
-    title: 'Áudio Principal — OM KROOM LINGAYA OM (9 minutos)',
+    title: 'O Mapa Da Caçada — Os 7 Passos Do Olhar Até A Cama',
     description:
-      'O mantra indiano ancestral entoado em frequência específica que ativa o chakra sacral. Escute com fones de ouvido durante o dia — no trânsito, caminhando, antes de sair de casa. A energia muda antes de você terminar de ouvir.',
-    value: 'R$ 97',
+      'O protocolo completo, passo a passo, que te leva do instante em que ela te olha até o instante em que a porta do quarto fecha. O que fazer. O que dizer. O que NUNCA fazer. Sem teoria, sem "seja você mesmo" — só execução bruta.',
+    value: 'R$ 197',
   },
   {
-    title: 'Bônus 1 — Versão Noturna (11 minutos)',
+    title: 'Bônus 1 — O Protocolo Do Isolamento',
     description:
-      'A mesma frequência, calibrada para escutar antes de dormir. Ancora a energia durante o sono, enquanto o corpo repousa. Você acorda diferente — mais firme, mais presente.',
-    value: 'R$ 47',
+      'Como arrancar a mulher do grupo, do barulho, da frente das amigas, e levá-la pra um lugar onde só existem vocês dois. O passo onde 90% dos homens travam, travam, travam — e perdem a mulher que já estava interessada.',
+    value: 'R$ 67',
   },
   {
-    title: 'Bônus 2 — Campo Energético (5 minutos)',
+    title: 'Bônus 2 — O Gatilho Do Beijo Sem Rejeição',
     description:
-      'Versão curta para escutar 1 minuto antes de entrar em qualquer ambiente — festa, reunião, elevador. Cria o campo magnético antes de você abrir a porta.',
+      'O exato momento e o exato movimento pra o primeiro beijo. Zero risco de rejeição. A técnica que faz ela já estar esperando — com os olhos fechados — antes de você chegar perto da boca dela.',
     value: 'R$ 53',
   },
 ];
 
 const faq: FaqItem[] = [
   {
-    q: 'Isso é seguro? Tem risco?',
-    a: 'É um áudio de meditação com um mantra ancestral. Você só escuta com fones de ouvido. Não há substância, não há ritual invasivo. O risco é zero — e você tem 30 dias de garantia para testar.',
+    q: 'Eu já comprei a Aura Predadora. Pra que isso?',
+    a: 'A Aura Predadora faz ela olhar. O Predador Caça faz você transar. Ponto. Sem isso, você vai ter mulheres te olhando com desejo — e vai ir pra casa sozinho, igual a hoje. A aura sem a caçada é como ter o fósforo e não saber onde está a pólvora. Você comprou a metade que atrai. Falta a metade que fecha.',
   },
   {
-    q: 'Funciona mesmo? Em quanto tempo eu sinto?',
-    a: 'A maioria dos homens relata os primeiros olhares entre o 2º e o 5º dia. Alguns sentem no primeiro dia. Depende do quanto você escuta e da sua sensibilidade. Mas o efeito é cumulativo — quanto mais usa, mais sólido fica.',
+    q: 'Isso funciona mesmo? Em quanto tempo?',
+    a: 'Funciona na primeira noite que você aplicar. Não é mágica — é mecânica. O passo a passo é exato. Você executa, ela responde. A maioria dos homens relata resultados na primeira semana porque o protocolo não depende de talento. Depende de seguir a sequência.',
   },
   {
-    q: 'Eu já comprei o protocolo. Preciso disso?',
-    a: 'O protocolo é o mapa. O áudio é o carro. Sem o áudio, você chega — mas demora semanas. Com o áudio, você chega em dias. É o complemento natural, óbvio, quase obrigatório.',
+    q: 'E se eu for tímido? Ou inexperiente?',
+    a: 'Melhor. Você não tem vícios pra desaprender. O método não pede carisma, não pede beleza, não pede experiência. Cada passo é mecânico — você não precisa "ser alguém", só precisa seguir a sequência. O cara mais tímido do Brasil aplica isso e fecha. Porque a biologia dela responde à execução, não ao seu nível social.',
   },
   {
     q: 'E se não funcionar comigo?',
-    a: 'Você tem 30 dias. Se não sentir diferença, escreva um e-mail e devolvemos cada centavo. Sem perguntas, sem burocracia. Todo o risco é nosso.',
+    a: '30 dias. Se aplicar e não fechar, devolvemos cada centavo. Sem perguntas, sem burocracia, sem desconforto. Um e-mail e está feito. Todo o risco é nosso. Você só tem a ganhar.',
   },
 ];
 
 export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
   return (
     <div className="fade-in">
-      <TransitionBar />
+      <TransitionBar message="Sua compra do Código da Aura Predadora está confirmada. Mas existe um buraco no seu jogo que vai te custar todas as mulheres — e ele está nesta tela." />
 
       <section className="mx-auto max-w-4xl px-4 pb-16 pt-12 text-center sm:pt-16">
         <div className="reveal flex justify-center">
-          <OtoBadge />
+          <OtoBadge label="A Tela Mais Importante Do Funil — Só Aparece Uma Vez" />
         </div>
 
         <h1 className="reveal mt-8 font-serif text-4xl font-extrabold leading-[1.1] text-cream sm:text-5xl md:text-6xl">
-          O Botão De Ativar Que Você Acabou De Esquecer De Apertar
+          A Aura Faz Elas Olharem.
+          <br />
+          <span className="gold-text">Mas Olhar Não Bota Ninguém Na Cama.</span>
         </h1>
 
         <p className="reveal mx-auto mt-6 max-w-2xl font-serif text-xl italic text-gold/90">
-          Existe um som antigo que liga o chakra sacral em 9 minutos — e as mulheres
-          sentem antes de você terminar de ouvir.
+          Você acabou de comprar a arma. Falta a munição — o passo a passo exato
+          que leva do olhar dela até o seu quarto. Sem ele, você vai ser o cara mais
+          magnético... que vai dormir sozinho.
         </p>
 
         <div className="reveal mt-8 flex justify-center">
@@ -114,69 +118,153 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
 
       <section className="mx-auto max-w-5xl px-4">
         <HeroImage
-          src="https://images.pexels.com/photos/16122118/pexels-photo-16122118.jpeg"
-          alt="Homem confiante caminhando na cidade à noite"
-          caption="O pescoço vira antes dela perceber que virou."
+          src="https://images.pexels.com/photos/17251579/pexels-photo-17251579.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+          alt="Casal em momento íntimo sob luz vermelha à noite"
+          caption="O olhar dela é só a primeira porta. O Predador Caça te dá a chave — e o mapa — de todas as outras."
           className="min-h-[440px] sm:min-h-[540px]"
         />
       </section>
 
-      <SectionDivider label="A origem" />
+      <SectionDivider label="A verdade que vai doer" />
 
       <section className="mx-auto max-w-3xl px-4">
         <div className="prose-sales reveal">
           <p>
-            Você acabou de comprar o <strong>Código da Aura Predadora</strong>. Bom.
-            Você tomou a decisão certa. Mas existe um detalhe que quase ninguém te
-            conta — e que separa o homem que <em>vê a aura funcionar</em> daquele que
-            lê o protocolo, acha bonito, e segue igual.
+            Você acabou de comprar o Código da Aura Predadora. Boa decisão. Em
+            poucos dias, as mulheres vão começar a te olhar diferente. Os pescoços
+            vão virar. Os sorrisos sem motivo vão começar. Você vai sentir o poder
+            da aura.
           </p>
           <p>
-            O protocolo é o <strong>mapa</strong>. Ele te diz para onde ir. Mas o
-            mapa não te leva até lá. O que te leva é um som — um mantra indiano
-            ancestral, <em>OM KROOM LINGAYA OM</em>, entoado em uma frequência
-            específica que ativa o chakra sacral, o centro da energia masculina.
+            Agora vou te falar algo que <strong>ninguém tem coragem de te dizer:</strong>
           </p>
           <p>
-            Esse conhecimento não está no Google. Não está no YouTube. Ele foi
-            guardado por séculos em linhagens tântricas do norte da Índia —
-            passado de boca a ouvido, de mestre a discípulo. O que ele faz é
-            simples: <strong>acorda o fogo que dorme na base da sua coluna</strong>.
-            E quando esse fogo acorda, algo muda no seu campo magnético. As mulheres
-            <em> sentem</em>. Não pensam, não decidem — <em>sentem</em>.
+            <strong>83% dos homens que compram produtos de atração nunca transam
+            por causa deles.</strong> Eles leem, acham incrível, sentem a aura
+            funcionando — e continuam indo pra casa sozinhos. Sabe por quê?
           </p>
           <p>
-            Sem o áudio, o protocolo leva semanas para gerar o mesmo efeito. Com o
-            áudio, os primeiros olhares começam em <strong>dias</strong>. Às vezes
-            em horas. É a diferença entre ler sobre fogo e segurar o fósforo.
+            <em>Porque nenhum desses produtos te ensina o que fazer depois do
+            olhar.</em>
+          </p>
+          <p>
+            A aura faz ela te notar. Mas entre <strong>ela te notar</strong> e{' '}
+            <strong>ela estar na sua cama</strong>, existem 7 passos. E são nesses
+            7 passos que 97% dos homens travam, travam, travam — e perdem a mulher
+            que JÁ ESTAVA INTERESSADA.
+          </p>
+          <p>
+            Pensa comigo: o homem mais magnético do mundo entra num bar. Três
+            mulheres viram a cabeça. Ele senta. Elas continuam olhando. E ele...
+            <em> não faz nada.</em> Ele não sabe o que fazer. Ele sente o olhar
+            delas — e congela. O momento esfria. Elas voltam pros celulares. Ele vai
+            pra casa. <strong>Sozinho. Igual a todos os outros dias.</strong>
+          </p>
+          <p>
+            É o homem mais magnético do mundo. E mesmo assim, ele perde. Porque a
+            aura abre a porta — mas <em>ninguém te ensinou a cruzá-la.</em>
           </p>
         </div>
       </section>
 
-      <SectionDivider label="O que acontece quando você escuta" />
+      <SectionDivider label="O cemitério dos homens que travam" />
+
+      <section className="mx-auto max-w-5xl px-4">
+        <div className="grid gap-6 sm:grid-cols-2">
+          {[
+            {
+              icon: Eye,
+              t: 'Ela olha. Você congela.',
+              d: 'O olhar veio. Você sentiu. E seu cérebro travou igual uma porta enferrujada. Você não sabe se olha de volta, se sorri, se se aproxima. Fica ali, paralisado, enquanto o momento escorre pelo ralo. Ela desiste. Você vai pra casa sozinho — de novo. Igual a todas as outras noites.',
+            },
+            {
+              icon: Target,
+              t: 'Você se aproxima. Erra.',
+              d: 'Você reúne a coragem de um Deus, vai até ela — e fala a coisa errada. No momento errado. Com a energia errada. A química que ela sentiu se quebra em segundos. O olhar dela apaga. Você vira mais um cara genérico que tentou e falhou. Ela volta pro celular. Você volta pra parede.',
+            },
+            {
+              icon: Zap,
+              t: 'Você conversa. Vira amigo.',
+              d: 'Vocês estão falando. Ela está rindo. Mas você não sabe como tocar, como mudar de ambiente, como criar tensão sexual. A conversa esfria. O clima morre. Ela diz "foi legal conhecer você" — a frase que significa: eu não senti nada. Você ganhou mais uma amiga. Parabéns.',
+            },
+            {
+              icon: Flame,
+              t: 'Você beija. E para aí.',
+              d: 'O beijo aconteceu. E agora? Você não sabe conduzir. Não sabe levar pra um lugar íntimo. Não sabe criar o momento pra sair dali. A noite termina no beijo. Ela vai pra casa. Você vai pra sua. O desejo morreu ali — e ela nunca mais vai te dar outra chance.',
+            },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="reveal rounded-2xl border border-gold/20 bg-ink-800/60 p-7"
+            >
+              <item.icon className="h-7 w-7 text-gold" />
+              <h3 className="mt-3 font-serif text-2xl font-bold text-cream">{item.t}</h3>
+              <p className="prose-sales mt-2 !text-[1.05rem] !leading-relaxed">{item.d}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <SectionDivider label="O problema real" />
+
+      <section className="mx-auto max-w-3xl px-4">
+        <div className="prose-sales reveal">
+          <p>
+            Cada um desses pontos é um <strong>gargalo mortal</strong>. Um lugar
+            onde o homem comum trava — e perde a mulher que <em>já estava
+            interessada</em>. Não é que ela não quis. Ela quis. O olhar veio. A
+            química existia. <strong>Você é quem não soube o que fazer com ela.</strong>
+          </p>
+          <p>
+            E é aqui que a maioria dos produtos de atração te abandona. Eles te
+            ensinam a ser notado. Ninguém te ensina a <em>fechar</em>. É como te
+            dar um carro sem te ensinar a dirigir — você senta, liga, e bate na
+            primeira esquina.
+          </p>
+          <p>
+            <strong>O Predador Caça é o que falta.</strong> Não é teoria. Não é
+            "seja confiante". É um <strong>mapa de 7 passos</strong> que te diz
+            exatamente o que fazer desde o instante em que ela te olha até o
+            instante em que a porta do quarto fecha. O que falar. Como olhar de
+            volta. Como aproximar sem assustar. Como arrancar ela do grupo. Como
+            beijar sem risco de rejeição. Como conduzir até a cama. <em>Cada passo.
+            Sem buracos. Sem teoria. Só execução.</em>
+          </p>
+          <p>
+            Você não precisa nascer sabendo. Não precisa de carisma. Não precisa de
+            experiência. Você só precisa <strong>seguir a sequência</strong>. Ela
+            foi testada, refinada, e funciona em qualquer homem — alto, baixo,
+            magro, gordo, jovem, maduro, careca. Porque a biologia feminina responde
+            à execução, não à estética. <em>Ela não decide te querer. Ela descobre
+            que já te quer — depois que você executa os passos certos.</em>
+          </p>
+        </div>
+      </section>
+
+      <SectionDivider label="O que acontece quando você aplica" />
 
       <section className="mx-auto max-w-5xl px-4">
         <div className="grid gap-6 sm:grid-cols-2">
           {[
             {
               n: '01',
-              t: 'Olhares na rua',
-              d: 'Mulheres viram o pescoço quando você passa. Não sabem por que olharam — só olharam.',
+              t: 'O olhar vira aproximação',
+              d: 'Ela olha. Você não congela. Você executa o passo 1. Em segundos, vocês estão conversando — e ela já está investindo no diálogo. O gelo que existia antes? Derreteu. Você nem precisou pensar.',
             },
             {
               n: '02',
-              t: 'Energia no ambiente',
-              d: 'Você entra num lugar e o clima muda. As pessoas te notam antes de você falar qualquer coisa.',
+              t: 'A conversa vira isolamento',
+              d: 'Você não fica gritando no barulho como um idiota. O passo 3 te ensina a arrancar ela do grupo e levá-la pra um lugar onde só existem vocês dois. As amigas dela nem percebem. Ela também não. Só segue.',
             },
             {
               n: '03',
-              t: 'Voz mais firme',
-              d: 'O som da sua voz desce, fica mais grave, mais segura. Sem esforço — o corpo se ajusta sozinho.',
+              t: 'O isolamento vira beijo',
+              d: 'Sem rejeição. Sem risco. Sem aquele momento constrangedor de "será que posso?". O passo 5 é o gatilho exato — o momento e o movimento que fazem ela já estar de olhos fechados antes de você chegar perto da boca dela.',
             },
             {
               n: '04',
-              t: 'Presença sem palavras',
-              d: 'Você senta em silêncio e ainda assim domina a mesa. A aura fala por você.',
+              t: 'O beijo vira a cama',
+              d: 'O passo 7 é a condução. Como sair do beijo, mudar de ambiente, e levar pra um lugar íntimo — sem que ela invente uma desculpa pra ir embora. Sem que ela hesite. Sem que a noite termine no beijo. Ela vai com você. Porque você conduziu certo.',
             },
           ].map((item) => (
             <div
@@ -191,7 +279,31 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
         </div>
       </section>
 
-      <SectionDivider label="Quem já escutou" />
+      <SectionDivider label="A matemática brutal" />
+
+      <section className="mx-auto max-w-3xl px-4">
+        <div className="reveal rounded-2xl border border-gold/30 bg-gold/5 p-8">
+          <div className="flex items-start gap-4">
+            <Bed className="mt-1 h-7 w-7 shrink-0 text-gold" />
+            <div className="prose-sales !text-[1.1rem] !leading-relaxed">
+              <p className="!mb-2">
+                <strong>83%</strong> dos homens que compram produtos de atração
+                <em> nunca transam por causa deles.</em>
+              </p>
+              <p className="!mb-2">
+                <strong>97%</strong> dos homens travam em pelo menos um dos 7
+                passos entre o olhar e a cama.
+              </p>
+              <p className="!mb-0">
+                <strong>0%</strong> desses homens foram ensinados a cruzar a porta
+                que a aura abre. <em>Até agora.</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider label="Quem já aplicou" />
 
       <section className="mx-auto max-w-5xl px-4">
         <Testimonials items={testimonials} />
@@ -201,9 +313,9 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
 
       <section className="mx-auto max-w-3xl px-4">
         <div className="reveal mb-6 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-4 py-1.5">
-          <Headphones className="h-4 w-4 text-gold" />
+          <Target className="h-4 w-4 text-gold" />
           <span className="font-sans text-xs font-bold uppercase tracking-widest text-gold">
-            3 áudios · Acesso imediato
+            1 protocolo + 2 bônus · Acesso imediato
           </span>
         </div>
         <DeliverablesList items={deliverables} />
@@ -211,8 +323,8 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
         <div className="reveal mt-8 rounded-xl border border-gold/20 bg-ink-800/40 p-6 text-center">
           <p className="font-serif text-lg text-cream/80">
             Valor real somado:{' '}
-            <span className="line-through text-cream/50">R$ 197</span>{' '}
-            <span className="ml-2 font-bold text-gold">— você economiza R$ 150</span>
+            <span className="line-through text-cream/50">R$ 317</span>{' '}
+            <span className="ml-2 font-bold text-gold">— você economiza R$ 220</span>
           </p>
         </div>
       </section>
@@ -223,10 +335,13 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
         <OfferCard>
           <div className="text-center">
             <p className="font-serif text-lg italic text-cream/70">
-              De <span className="line-through">R$ 197</span> por apenas
+              De <span className="line-through">R$ 317</span> por apenas
             </p>
             <p className="mt-2 font-serif text-6xl font-extrabold gold-text sm:text-7xl">
-              R$ 47
+              R$ 97
+            </p>
+            <p className="mt-3 font-sans text-base font-semibold text-cream/75">
+              ou 3x de R$ 32,33
             </p>
             <p className="mt-2 font-sans text-sm font-medium uppercase tracking-widest text-cream/60">
               Pagamento único · Acesso imediato · Vitalício
@@ -234,7 +349,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
           </div>
 
           <div className="mt-8 flex justify-center">
-            <Spots />
+            <Spots from={9} floor={3} />
           </div>
 
           <div className="mt-8 flex justify-center">
@@ -252,11 +367,17 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
       <section className="mx-auto max-w-3xl px-4 pb-12">
         <div className="prose-sales reveal mx-auto max-w-2xl text-center">
           <p>
-            Você acabou de tomar a decisão de ativar sua aura.{' '}
-            <strong>Não pare no meio do caminho.</strong> O homem que decide,
-            decide até o fim. Esta tela só existe uma vez. Quando você clicar em
-            qualquer botão, ela some para sempre — e o áudio não estará à venda em
-            nenhuma página do produto.
+            Você acabou de comprar a aura. <strong>Se você parar aqui, você vai
+            ser o cara mais magnético que dorme sozinho.</strong> A aura sem o
+            mapa da caçada é como ter o fósforo e não saber onde está a pólvora.
+            Você vai sentir o olhar delas — e vai travar. Igual a todos os outros
+            homens que compraram só a metade.
+          </p>
+          <p>
+            Essa tela só aparece uma vez. Quando você clicar em qualquer botão,
+            ela some. <em>O Predador Caça</em> não estará à venda em nenhuma página
+            do produto. Nunca. A escolha é sua: <strong>ser olhado</strong> ou{' '}
+            <strong>levar pra casa</strong>.
           </p>
         </div>
 
@@ -264,7 +385,8 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
           <YesNoCTAs
             checkoutUrl={checkoutUrl}
             onNo={onNo}
-            yesLabel="Sim, Adicione o Áudio de Ativação Sacral ao Meu Pedido"
+            yesLabel="Sim, Quero O Mapa Da Caçada Por R$ 97"
+            noLabel="Não, obrigado. Eu prefiro ser olhado e ir pra casa sozinho — igual a todas as outras noites."
           />
         </div>
       </section>
@@ -275,10 +397,11 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
 
       <section className="mx-auto max-w-3xl px-4 pb-20 text-center">
         <div className="reveal flex flex-col items-center gap-3 rounded-2xl border border-gold/20 bg-ink-800/40 p-8">
-          <Volume2 className="h-6 w-6 text-gold" />
+          <Flame className="h-6 w-6 text-gold" />
           <p className="font-serif text-xl italic text-gold/90">
-            Lembre-se: quando você sair desta tela, o Áudio de Ativação Sacral some
-            para sempre.
+            Lembre-se: quando você sair desta tela, O Predador Caça some para
+            sempre. A aura abre a porta. Este é o único mapa que te ensina a cruzar
+            — e a fechar.
           </p>
           <div className="mt-4 flex items-center gap-2 text-cream/50">
             <ArrowUp className="h-4 w-4 animate-bounce" />
@@ -292,9 +415,10 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
       <div className="mx-auto max-w-3xl px-4 pb-10 text-center">
         <p className="reveal flex items-center justify-center gap-2 font-sans text-xs uppercase tracking-widest text-cream/40">
           <AlertTriangle className="h-3.5 w-3.5 text-gold/60" />
-          Conteudo esotérico · Não substitui acompanhamento profissional
+          Material educacional · Não substitui acompanhamento profissional
         </p>
       </div>
+      <StickyCTA checkoutUrl={checkoutUrl} label="Adicionar Por R$ 97" />
     </div>
   );
 }
