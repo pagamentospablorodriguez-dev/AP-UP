@@ -21,7 +21,7 @@ interface Oto2Props {
 const testimonials: Testimonial[] = [
   {
     quote:
-      'Cara, eu já estava indo pra cama com mulheres por causa da aura. Mas eu era medíocre. Saiam satisfeitas? Não sei. Depois do Predador Domina, uma me ligou no dia seguinte pedindo pra repetir. Isso nunca tinha acontecido.',
+      'Cara, eu já estava indo pra cama com mulheres por causa da aura. Mas eu era medíocre. Saiam satisfeitas? Não sei. Depois do Protocolo Da Dominação, uma me ligou no dia seguinte pedindo pra repetir. Isso nunca tinha acontecido.',
     name: 'P. H.',
     age: 33,
     city: 'Rio de Janeiro, RJ',
@@ -296,7 +296,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
             Você já tem a aura. Já tem o mapa da caçada.{' '}
             <strong>Falta o que decide tudo.</strong> A cama é onde o homem se
             prova ou se queima. Esta é a última tela de oferta do funil. Quando você
-            clicar em qualquer botão, ela some. <em>O Predador Domina</em> não
+            clicar em qualquer botão, ela some. <em>O Protocolo Da Dominação</em> não
             estará à venda em nenhuma página do produto.
           </p>
         </div>
@@ -305,7 +305,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
           <YesNoCTAs
             checkoutUrl={checkoutUrl}
             onNo={onNo}
-            yesLabel="Sim, Quero O Predador Domina Por R$ 197"
+            yesLabel="Sim, Quero O Protocolo Da Dominação Por R$ 197"
           />
         </div>
       </section>
@@ -318,7 +318,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
         <div className="reveal flex flex-col items-center gap-3 rounded-2xl border border-gold/20 bg-ink-800/40 p-8">
           <Crown className="h-6 w-6 text-gold" />
           <p className="font-serif text-xl italic text-gold/90">
-            Lembre-se: quando você sair desta tela, O Predador Domina some para
+            Lembre-se: quando você sair desta tela, O Protocolo Da Dominação some para
             sempre. A aura faz ela olhar. O mapa faz ela ir. Isso faz ela voltar.
           </p>
           <div className="mt-4 flex items-center gap-2 text-cream/50">
