@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'O material da aura mudou meu jogo. Mas o Predador Caça me ensinou o que nenhum cara te ensina: como sair do olhar e ir pra cama. A parte do isolamento é cirúrgica. Eu tirei uma mina de dentro de um grupo de 6 amigas sem ela sequer perceber que eu estava conduzindo. Noite seguinte, na minha casa.',
+      'O material da aura mudou meu jogo. Mas o Mapa Da Caçada me ensinou o que nenhum cara te ensina: como sair do olhar e ir pra cama. A parte do isolamento é cirúrgica. Eu tirei uma mina de dentro de um grupo de 6 amigas sem ela sequer perceber que eu estava conduzindo. Noite seguinte, na minha casa.',
     name: 'A. C.',
     age: 28,
     city: 'Belo Horizonte, MG',
@@ -73,7 +73,7 @@ const deliverables: Deliverable[] = [
 const faq: FaqItem[] = [
   {
     q: 'Eu já comprei a Aura Predadora. Pra que isso?',
-    a: 'A Aura Predadora faz ela olhar. O Predador Caça faz você transar. Ponto. Sem isso, você vai ter mulheres te olhando com desejo — e vai ir pra casa sozinho, igual a hoje. A aura sem a caçada é como ter o fósforo e não saber onde está a pólvora. Você comprou a metade que atrai. Falta a metade que fecha.',
+    a: 'A Aura Predadora faz ela olhar. O Mapa Da Caçada faz você transar. Ponto. Sem isso, você vai ter mulheres te olhando com desejo — e vai ir pra casa sozinho, igual a hoje. A aura sem a caçada é como ter o fósforo e não saber onde está a pólvora. Você comprou a metade que atrai. Falta a metade que fecha.',
   },
   {
     q: 'Isso funciona mesmo? Em quanto tempo?',
@@ -120,7 +120,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
         <HeroImage
           src="https://images.pexels.com/photos/31021644/pexels-photo-31021644.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
           alt="Casal em momento íntimo sob luz vermelha à noite"
-          caption="O olhar dela é só a primeira porta. O Predador Caça te dá a chave — e o mapa — de todas as outras."
+          caption="O olhar dela é só a primeira porta. O Mapa Da Caçada te dá a chave — e o mapa — de todas as outras."
           className="min-h-[440px] sm:min-h-[540px]"
         />
       </section>
@@ -222,7 +222,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
             primeira esquina.
           </p>
           <p>
-            <strong>O Predador Caça é o que falta.</strong> Não é teoria. Não é
+            <strong>O Mapa Da Caçada é o que falta.</strong> Não é teoria. Não é
             "seja confiante". É um <strong>mapa de 7 passos</strong> que te diz
             exatamente o que fazer desde o instante em que ela te olha até o
             instante em que a porta do quarto fecha. O que falar. Como olhar de
@@ -375,7 +375,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
           </p>
           <p>
             Essa tela só aparece uma vez. Quando você clicar em qualquer botão,
-            ela some. <em>O Predador Caça</em> não estará à venda em nenhuma página
+            ela some. <em>O Mapa Da Caçada</em> não estará à venda em nenhuma página
             do produto. Nunca. A escolha é sua: <strong>ser olhado</strong> ou{' '}
             <strong>levar pra casa</strong>.
           </p>
@@ -399,7 +399,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
         <div className="reveal flex flex-col items-center gap-3 rounded-2xl border border-gold/20 bg-ink-800/40 p-8">
           <Flame className="h-6 w-6 text-gold" />
           <p className="font-serif text-xl italic text-gold/90">
-            Lembre-se: quando você sair desta tela, O Predador Caça some para
+            Lembre-se: quando você sair desta tela, O Mapa Da Caçada some para
             sempre. A aura abre a porta. Este é o único mapa que te ensina a cruzar
             — e a fechar.
           </p>
