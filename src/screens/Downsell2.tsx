@@ -115,7 +115,7 @@ export default function Downsell2({ checkoutUrl, onNo }: Downsell2Props) {
               R$ 67
             </p>
             <p className="mt-3 font-sans text-base font-semibold text-cream/75">
-              ou 3x de R$ 23,80
+              ou 12x de R$ 6,92
             </p>
             <p className="mt-2 font-sans text-sm font-medium uppercase tracking-widest text-cream/60">
               Acesso imediato · Vitalício
