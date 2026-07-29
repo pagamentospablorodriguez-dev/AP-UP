@@ -3,7 +3,6 @@ import { Lock, Check } from 'lucide-react';
 import CTAButton from './CTAButton';
 
 interface YesNoCTAsProps {
-  /** URL de checkout para onde o SIM leva. */
   checkoutUrl: string;
   yesLabel: ReactNode;
   yesMicrocopy?: string;
