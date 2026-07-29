@@ -107,7 +107,7 @@ export default function Downsell1({ checkoutUrl, onNo }: Downsell1Props) {
         <OfferCard>
           <div className="text-center">
             <p className="font-serif text-lg italic text-cream/70">
-              O Predador Caça — versão essencial (7 passos, sem bônus)
+              O Mapa Da Caçada — versão essencial (7 passos, sem bônus)
             </p>
             <p className="mt-3 font-serif text-sm text-cream/50">
               De <span className="line-through">R$ 197</span> por apenas
