@@ -363,7 +363,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
               R$ 97
             </p>
             <p className="mt-3 font-sans text-base font-semibold text-cream/75">
-              ou 3x de R$ 32,33
+              ou 12x de R$ 10,02
             </p>
             <p className="mt-2 font-sans text-sm font-medium uppercase tracking-widest text-cream/60">
               Pagamento único · Acesso imediato · Vitalício
