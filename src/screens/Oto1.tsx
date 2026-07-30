@@ -96,7 +96,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
 
       <section className="mx-auto max-w-4xl px-4 pb-16 pt-12 text-center sm:pt-16">
         <div className="reveal flex justify-center">
-          <OtoBadge label="A Tela Mais Importante Do Funil — Só Aparece Uma Vez" />
+          <OtoBadge label="A Tela Mais Importante — Só Aparece Uma Vez" />
         </div>
 
         <h1 className="reveal mt-8 font-serif text-4xl font-extrabold leading-[1.1] text-cream sm:text-5xl md:text-6xl">
