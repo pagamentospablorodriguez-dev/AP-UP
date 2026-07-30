@@ -267,7 +267,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
             </div>
             <div className="flex items-center justify-between rounded-lg bg-gold/10 px-4 py-3">
               <span className="font-serif text-lg font-bold text-gold">Sua oferta de hoje</span>
-              <span className="font-serif text-3xl font-extrabold gold-text">R$ 197</span>
+              <span className="font-serif text-3xl font-extrabold gold-text">R$ 147</span>
             </div>
           </div>
           <p className="mt-5 text-center font-sans text-sm font-semibold uppercase tracking-widest text-gold">
@@ -285,7 +285,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
               De <span className="line-through">R$ 497</span> por apenas
             </p>
             <p className="mt-2 font-serif text-6xl font-extrabold gold-text sm:text-7xl">
-              R$ 197
+              R$ 147
             </p>
             <p className="mt-3 font-sans text-base font-semibold text-cream/75">
               ou 12x de R$ 20,35
@@ -326,7 +326,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
           <YesNoCTAs
             checkoutUrl={checkoutUrl}
             onNo={onNo}
-            yesLabel="Sim, Quero O Protocolo Da Dominação Por R$ 197"
+            yesLabel="Sim, Quero O Protocolo Da Dominação Por R$ 147"
           />
         </div>
       </section>
@@ -352,7 +352,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
       </section>
 
      
-      <StickyCTA checkoutUrl={checkoutUrl} label="Adicionar Por R$ 197" />
+      <StickyCTA checkoutUrl={checkoutUrl} label="Adicionar Por R$ 147" />
     </div>
   );
 }
