@@ -22,7 +22,7 @@ export default function Downsell2({ checkoutUrl, onNo }: Downsell2Props) {
         </div>
 
         <h1 className="reveal mt-8 font-serif text-4xl font-extrabold leading-[1.1] text-cream sm:text-5xl">
-          Se R$ 197 foi demais agora, eu entendo.
+          Se R$ 147 foi demais agora, eu entendo.
         </h1>
 
         <p className="reveal mx-auto mt-6 max-w-2xl font-serif text-xl italic text-gold/90">
@@ -34,7 +34,7 @@ export default function Downsell2({ checkoutUrl, onNo }: Downsell2Props) {
       <section className="mx-auto max-w-3xl px-4">
         <div className="prose-sales reveal">
           <p>
-            Eu respeito. R$ 197 é um valor real. Talvez não seja o momento.
+            Eu respeito. R$ 147 é um valor real. Talvez não seja o momento.
             <strong> Eu entendo.</strong>
           </p>
           <p>
