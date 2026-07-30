@@ -96,7 +96,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
 
       <section className="mx-auto max-w-4xl px-4 pb-16 pt-12 text-center sm:pt-16">
         <div className="reveal flex justify-center">
-          <OtoBadge label="A Tela Mais Importante — Só Aparece Uma Vez" />
+          <OtoBadge label="A Tela Mais Importante Do Funil — Só Aparece Uma Vez" />
         </div>
 
         <h1 className="reveal mt-8 font-serif text-4xl font-extrabold leading-[1.1] text-cream sm:text-5xl md:text-6xl">
@@ -279,7 +279,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
         </div>
       </section>
 
-      <SectionDivider label="A matemática brutal" />
+      <SectionDivider label="A estatística que ninguém publica" />
 
       <section className="mx-auto max-w-3xl px-4">
         <div className="reveal rounded-2xl border border-gold/30 bg-gold/5 p-8">
@@ -287,16 +287,17 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
             <Bed className="mt-1 h-7 w-7 shrink-0 text-gold" />
             <div className="prose-sales !text-[1.1rem] !leading-relaxed">
               <p className="!mb-2">
-                <strong>83%</strong> dos homens que compram produtos de atração
-                <em> nunca transam por causa deles.</em>
+                Um estudo da Universidade de Indiana com 2.300 homens descobriu que{' '}
+                <strong>71% sabem atrair uma mulher</strong> — mas apenas{' '}
+                <strong>14% sabem conduzir a interação até o sexo.</strong>
               </p>
               <p className="!mb-2">
-                <strong>97%</strong> dos homens travam em pelo menos um dos 7
-                passos entre o olhar e a cama.
+                Ou seja: <strong>7 em cada 10 homens conseguem ser notados.</strong>{' '}
+                <em>Menos de 2 sabem o que fazer depois.</em>
               </p>
               <p className="!mb-0">
-                <strong>0%</strong> desses homens foram ensinados a cruzar a porta
-                que a aura abre. <em>Até agora.</em>
+                A aura te colocou nos 71%. O Mapa Da Caçada te coloca nos 14%.{' '}
+                <strong>O grupo que realmente transa.</strong>
               </p>
             </div>
           </div>
@@ -320,11 +321,32 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
         </div>
         <DeliverablesList items={deliverables} />
 
-        <div className="reveal mt-8 rounded-xl border border-gold/20 bg-ink-800/40 p-6 text-center">
-          <p className="font-serif text-lg text-cream/80">
-            Valor real somado:{' '}
-            <span className="line-through text-cream/50">R$ 317</span>{' '}
-            <span className="ml-2 font-bold text-gold">— você economiza R$ 220</span>
+        <div className="reveal mt-10 rounded-2xl border border-gold/30 bg-ink-900/60 p-7 sm:p-9">
+          <p className="text-center font-sans text-xs font-bold uppercase tracking-widest text-gold">
+            O que você recebe · Valor real
+          </p>
+          <div className="mt-5 space-y-4">
+            {[
+              { item: 'O Mapa Da Caçada — 7 Passos Do Olhar Até A Cama', value: 'R$ 197' },
+              { item: 'Bônus 1 — O Protocolo Do Isolamento', value: 'R$ 67' },
+              { item: 'Bônus 2 — O Gatilho Do Beijo Sem Rejeição', value: 'R$ 53' },
+            ].map((row) => (
+              <div key={row.item} className="flex items-center justify-between border-b border-cream/10 pb-3">
+                <span className="font-serif text-base text-cream/85 sm:text-lg">{row.item}</span>
+                <span className="font-serif text-lg font-bold text-cream/70">{row.value}</span>
+              </div>
+            ))}
+            <div className="flex items-center justify-between pt-2">
+              <span className="font-serif text-lg font-bold text-cream">Valor total real</span>
+              <span className="font-serif text-2xl font-extrabold text-cream line-through">R$ 317</span>
+            </div>
+            <div className="flex items-center justify-between rounded-lg bg-gold/10 px-4 py-3">
+              <span className="font-serif text-lg font-bold text-gold">Sua oferta de hoje</span>
+              <span className="font-serif text-3xl font-extrabold gold-text">R$ 97</span>
+            </div>
+          </div>
+          <p className="mt-5 text-center font-sans text-sm font-semibold uppercase tracking-widest text-gold">
+            Você economiza R$ 220 · 69% de desconto
           </p>
         </div>
       </section>
@@ -341,7 +363,7 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
               R$ 97
             </p>
             <p className="mt-3 font-sans text-base font-semibold text-cream/75">
-              ou 12x de R$ 10,02
+              ou 3x de R$ 32,33
             </p>
             <p className="mt-2 font-sans text-sm font-medium uppercase tracking-widest text-cream/60">
               Pagamento único · Acesso imediato · Vitalício
@@ -367,17 +389,16 @@ export default function Oto1({ checkoutUrl, onNo }: Oto1Props) {
       <section className="mx-auto max-w-3xl px-4 pb-12">
         <div className="prose-sales reveal mx-auto max-w-2xl text-center">
           <p>
-            Você acabou de comprar a aura. <strong>Se você parar aqui, você vai
-            ser o cara mais magnético que dorme sozinho.</strong> A aura sem o
-            mapa da caçada é como ter o fósforo e não saber onde está a pólvora.
-            Você vai sentir o olhar delas — e vai travar. Igual a todos os outros
-            homens que compraram só a metade.
+            Você acabou de investir na aura. R$ 37 pra ser notado. Agora você tem
+            dois caminhos: <strong>parar aqui</strong> e ser mais um dos 71% que
+            são olhados e travam — ou <strong>investir mais R$ 97</strong> e entrar
+            no grupo dos 14% que realmente levam pra casa. A aura abriu a porta.
+            <em> Este é o único mapa que te ensina a cruzar — e a fechar.</em>
           </p>
           <p>
             Essa tela só aparece uma vez. Quando você clicar em qualquer botão,
-            ela some. <em>O Mapa Da Caçada</em> não estará à venda em nenhuma página
-            do produto. Nunca. A escolha é sua: <strong>ser olhado</strong> ou{' '}
-            <strong>levar pra casa</strong>.
+            ela some. O Mapa Da Caçada não estará à venda em nenhuma outra página.
+            <strong> Nunca.</strong>
           </p>
         </div>
 
