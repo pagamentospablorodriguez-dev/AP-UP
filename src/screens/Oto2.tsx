@@ -246,11 +246,32 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
         </div>
         <DeliverablesList items={deliverables} />
 
-        <div className="reveal mt-8 rounded-xl border border-gold/20 bg-ink-800/40 p-6 text-center">
-          <p className="font-serif text-lg text-cream/80">
-            Valor real somado:{' '}
-            <span className="line-through text-cream/50">R$ 497</span>{' '}
-            <span className="ml-2 font-bold text-gold">— você economiza R$ 300</span>
+        <div className="reveal mt-10 rounded-2xl border border-gold/30 bg-ink-900/60 p-7 sm:p-9">
+          <p className="text-center font-sans text-xs font-bold uppercase tracking-widest text-gold">
+            O que você recebe · Valor real
+          </p>
+          <div className="mt-5 space-y-4">
+            {[
+              { item: 'O Protocolo Da Dominação — Manual Da Hora H', value: 'R$ 297' },
+              { item: 'Bônus 1 — O Código Do Orgasmo Múltiplo', value: 'R$ 97' },
+              { item: 'Bônus 2 — O Controle Predator (ejaculação)', value: 'R$ 103' },
+            ].map((row) => (
+              <div key={row.item} className="flex items-center justify-between border-b border-cream/10 pb-3">
+                <span className="font-serif text-base text-cream/85 sm:text-lg">{row.item}</span>
+                <span className="font-serif text-lg font-bold text-cream/70">{row.value}</span>
+              </div>
+            ))}
+            <div className="flex items-center justify-between pt-2">
+              <span className="font-serif text-lg font-bold text-cream">Valor total real</span>
+              <span className="font-serif text-2xl font-extrabold text-cream line-through">R$ 497</span>
+            </div>
+            <div className="flex items-center justify-between rounded-lg bg-gold/10 px-4 py-3">
+              <span className="font-serif text-lg font-bold text-gold">Sua oferta de hoje</span>
+              <span className="font-serif text-3xl font-extrabold gold-text">R$ 197</span>
+            </div>
+          </div>
+          <p className="mt-5 text-center font-sans text-sm font-semibold uppercase tracking-widest text-gold">
+            Você economiza R$ 300 · 60% de desconto
           </p>
         </div>
       </section>
@@ -330,12 +351,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
         </div>
       </section>
 
-      <div className="mx-auto max-w-3xl px-4 pb-10 text-center">
-        <p className="reveal flex items-center justify-center gap-2 font-sans text-xs uppercase tracking-widest text-cream/40">
-          <AlertTriangle className="h-3.5 w-3.5 text-gold/60" />
-          Material educacional · Não substitui acompanhamento profissional
-        </p>
-      </div>
+     
       <StickyCTA checkoutUrl={checkoutUrl} label="Adicionar Por R$ 197" />
     </div>
   );
