@@ -271,7 +271,7 @@ export default function Oto2({ checkoutUrl, onNo }: Oto2Props) {
             </div>
           </div>
           <p className="mt-5 text-center font-sans text-sm font-semibold uppercase tracking-widest text-gold">
-            Você economiza R$ 300 · 60% de desconto
+            Você economiza R$ 350 · 70% de desconto
           </p>
         </div>
       </section>
