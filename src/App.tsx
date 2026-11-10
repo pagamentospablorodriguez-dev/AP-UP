@@ -225,10 +225,12 @@ import Obrigado from './screens/Obrigado';
 import { useReveal } from './useReveal';
 
 export const CHECKOUT_URLS: Record<string, string> = {
-  oto1: 'https://pay.cakto.com.br/34zz6sr_1009352',
-  downsell1: 'https://pay.cakto.com.br/39xah76_1009370',
-  oto2: 'https://pay.cakto.com.br/3aaez55_1009405',
-  downsell2: 'https://pay.cakto.com.br/7dn7ovh_1009416',
+  oto1: 'https://pay.cakto.com.br/37siaqe_990735',
+  downsell1: 'https://pay.cakto.com.br/ifchiiy_990744',
+  oto2: 'https://pay.cakto.com.br/jfzddfv_990802',
+  downsell2: 'https://pay.cakto.com.br/3bvh7xe_990984',
+  oto3: 'https://pay.cakto.com.br/5hkuuue_991210',
+  downsell3: 'https://pay.cakto.com.br/343v2he_991220',
 };
 
 function ScrollToTop() {
