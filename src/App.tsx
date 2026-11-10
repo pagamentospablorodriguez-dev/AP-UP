@@ -294,6 +294,30 @@ function Downsell2Route() {
     <RoutedScreen step="downsell2">
       <Downsell2
         checkoutUrl={CHECKOUT_URLS.downsell2}
+        onNo={() => navigate('/oto3')}
+      />
+    </RoutedScreen>
+  );
+}
+
+function Downsell2Route() {
+  const navigate = useNavigate();
+  return (
+    <RoutedScreen step="oto3">
+      <Downsell2
+        checkoutUrl={CHECKOUT_URLS.oto3}
+        onNo={() => navigate('/downsell3')}
+      />
+    </RoutedScreen>
+  );
+}
+
+function Downsell2Route() {
+  const navigate = useNavigate();
+  return (
+    <RoutedScreen step="downsell3">
+      <Downsell2
+        checkoutUrl={CHECKOUT_URLS.oto3}
         onNo={() => navigate('/obrigado')}
       />
     </RoutedScreen>
