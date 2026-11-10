@@ -346,6 +346,8 @@ export default function App() {
         <Route path="/downsell1" element={<Downsell1Route />} />
         <Route path="/oto2" element={<Oto2Route />} />
         <Route path="/downsell2" element={<Downsell2Route />} />
+        <Route path="/oto3" element={<Oto3Route />} />
+        <Route path="/downsell3" element={<Downsell3Route />} />
         <Route path="/obrigado" element={<ObrigadoRoute />} />
         <Route path="*" element={<Oto1Route />} />
       </Routes>
