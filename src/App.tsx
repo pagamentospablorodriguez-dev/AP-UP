@@ -300,7 +300,7 @@ function Downsell2Route() {
   );
 }
 
-function Downsell2Route() {
+function Oto3Route() {
   const navigate = useNavigate();
   return (
     <RoutedScreen step="oto3">
@@ -312,7 +312,7 @@ function Downsell2Route() {
   );
 }
 
-function Downsell2Route() {
+function Downsell3Route() {
   const navigate = useNavigate();
   return (
     <RoutedScreen step="downsell3">
