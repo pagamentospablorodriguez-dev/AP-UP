@@ -308,7 +308,7 @@ function Oto3Route() {
   const navigate = useNavigate();
   return (
     <RoutedScreen step="oto3">
-      <Downsell2
+      <Oto3
         checkoutUrl={CHECKOUT_URLS.oto3}
         onNo={() => navigate('/downsell3')}
       />
@@ -320,7 +320,7 @@ function Downsell3Route() {
   const navigate = useNavigate();
   return (
     <RoutedScreen step="downsell3">
-      <Downsell2
+      <Downsell3
         checkoutUrl={CHECKOUT_URLS.downsell3}
         onNo={() => navigate('/obrigado')}
       />
