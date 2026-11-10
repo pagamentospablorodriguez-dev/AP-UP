@@ -317,7 +317,7 @@ function Downsell2Route() {
   return (
     <RoutedScreen step="downsell3">
       <Downsell2
-        checkoutUrl={CHECKOUT_URLS.oto3}
+        checkoutUrl={CHECKOUT_URLS.downsell3}
         onNo={() => navigate('/obrigado')}
       />
     </RoutedScreen>
