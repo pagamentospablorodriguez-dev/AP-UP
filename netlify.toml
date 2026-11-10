@@ -32,6 +32,35 @@
   status = 200
 
 
+
+
+  [[redirects]]
+  from = "/oto4"
+  to = "/index.html"
+  status = 200
+
+
+   [[redirects]]
+  from = "/downsell4"
+  to = "/index.html"
+  status = 200
+
+
+
+
+  [[redirects]]
+  from = "/oto5"
+  to = "/index.html"
+  status = 200
+
+
+   [[redirects]]
+  from = "/downsell5"
+  to = "/index.html"
+  status = 200
+  
+
+
   
    [[redirects]]
   from = "/obrigado"
