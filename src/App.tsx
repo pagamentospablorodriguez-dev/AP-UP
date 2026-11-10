@@ -430,12 +430,12 @@ export default function App() {
         <Route path="/downsell3" element={<Downsell3Route />} />
 
 
-        <Route path="/oto4" element={<Oto3Route />} />
-        <Route path="/downsell4" element={<Downsell3Route />} />
+        <Route path="/oto4" element={<Oto4Route />} />
+        <Route path="/downsell4" element={<Downsell4Route />} />
 
 
-        <Route path="/oto5" element={<Oto3Route />} />
-        <Route path="/downsell5" element={<Downsell3Route />} />
+        <Route path="/oto5" element={<Oto5Route />} />
+        <Route path="/downsell5" element={<Downsell5Route />} />
         
         
         <Route path="/obrigado" element={<ObrigadoRoute />} />
