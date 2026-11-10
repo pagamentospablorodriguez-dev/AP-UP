@@ -226,12 +226,12 @@ import Oto3 from './screens/Oto3';
 import Downsell3 from './screens/Downsell3';
 
 
-import Oto3 from './screens/Oto4';
-import Downsell3 from './screens/Downsell4';
+import Oto4 from './screens/Oto4';
+import Downsell4 from './screens/Downsell4';
 
 
-import Oto3 from './screens/Oto5';
-import Downsell3 from './screens/Downsell5';
+import Oto5 from './screens/Oto5';
+import Downsell5 from './screens/Downsell5';
 
 
 import Obrigado from './screens/Obrigado';
