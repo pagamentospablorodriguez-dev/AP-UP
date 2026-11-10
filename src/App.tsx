@@ -235,6 +235,14 @@ export const CHECKOUT_URLS: Record<string, string> = {
   downsell2: 'https://pay.cakto.com.br/3bvh7xe_990984',
   oto3: 'https://pay.cakto.com.br/5hkuuue_991210',
   downsell3: 'https://pay.cakto.com.br/343v2he_991220',
+
+
+  oto4: 'https://pay.cakto.com.br/34zz6sr_1009352',
+  downsell4: 'https://pay.cakto.com.br/39xah76_1009370',
+
+  oto5: 'https://pay.cakto.com.br/3aaez55_1009405',
+  downsell5: 'https://pay.cakto.com.br/7dn7ovh_1009416',
+  
 };
 
 function ScrollToTop() {
@@ -322,11 +330,74 @@ function Downsell3Route() {
     <RoutedScreen step="downsell3">
       <Downsell3
         checkoutUrl={CHECKOUT_URLS.downsell3}
+        onNo={() => navigate('/oto4')}
+      />
+    </RoutedScreen>
+  );
+}
+
+
+
+
+
+
+
+function Oto4Route() {
+  const navigate = useNavigate();
+  return (
+    <RoutedScreen step="oto4">
+      <Oto4
+        checkoutUrl={CHECKOUT_URLS.oto4}
+        onNo={() => navigate('/downsell4')}
+      />
+    </RoutedScreen>
+  );
+}
+
+function Downsell4Route() {
+  const navigate = useNavigate();
+  return (
+    <RoutedScreen step="downsell4">
+      <Downsell4
+        checkoutUrl={CHECKOUT_URLS.downsell4}
+        onNo={() => navigate('/oto5')}
+      />
+    </RoutedScreen>
+  );
+}
+
+
+
+
+
+
+
+function Oto5Route() {
+  const navigate = useNavigate();
+  return (
+    <RoutedScreen step="oto5">
+      <Oto5
+        checkoutUrl={CHECKOUT_URLS.oto5}
+        onNo={() => navigate('/downsell5')}
+      />
+    </RoutedScreen>
+  );
+}
+
+function Downsell5Route() {
+  const navigate = useNavigate();
+  return (
+    <RoutedScreen step="downsell5">
+      <Downsell5
+        checkoutUrl={CHECKOUT_URLS.downsell5}
         onNo={() => navigate('/obrigado')}
       />
     </RoutedScreen>
   );
 }
+
+
+
 
 function ObrigadoRoute() {
   return (
@@ -348,6 +419,16 @@ export default function App() {
         <Route path="/downsell2" element={<Downsell2Route />} />
         <Route path="/oto3" element={<Oto3Route />} />
         <Route path="/downsell3" element={<Downsell3Route />} />
+
+
+        <Route path="/oto4" element={<Oto3Route />} />
+        <Route path="/downsell4" element={<Downsell3Route />} />
+
+
+        <Route path="/oto5" element={<Oto3Route />} />
+        <Route path="/downsell5" element={<Downsell3Route />} />
+        
+        
         <Route path="/obrigado" element={<ObrigadoRoute />} />
         <Route path="*" element={<Oto1Route />} />
       </Routes>
