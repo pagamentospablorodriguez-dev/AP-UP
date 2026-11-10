@@ -221,6 +221,10 @@ import Oto1 from './screens/Oto1';
 import Downsell1 from './screens/Downsell1';
 import Oto2 from './screens/Oto2';
 import Downsell2 from './screens/Downsell2';
+
+import Oto2 from './screens/Oto3';
+import Downsell2 from './screens/Downsell3';
+
 import Obrigado from './screens/Obrigado';
 import { useReveal } from './useReveal';
 
